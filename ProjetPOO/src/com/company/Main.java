@@ -1,8 +1,10 @@
 package com.company;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-
+    static List<Character> characters = new ArrayList();
     public static void main(String[] args) {
         // write your code here
         //System.out.println( "Hello World !" );
@@ -12,6 +14,7 @@ public class Main {
         System.out.println("type your command");
         boolean menu=true;
         int count=0;
+
         while (menu){Scanner userInput = new Scanner(System.in);
             String command = userInput.nextLine();
             switch (command){
@@ -19,13 +22,40 @@ public class Main {
                         "exit => Quit the application \n ");
                 break;
                 case "exit":{menu=false; System.exit(0);}
-                //case "create character": var character = new Character();
+                case "create character": characters.add(new Character()) ;
+                    break;
+                case "list": {
+                    for (Character character:
+                         characters) {
+                        System.out.println(character.Name());
+
+                    }
+                }
+                break;
+                case "info":{System.out.println("entrez l'id de votre personnage");
+                    userInput = new Scanner(System.in);
+                    int id = userInput.nextInt();
+                CharacterInfo(id);}
+                break;
                 default: System.out.println("rentre une commande qui existe fdp (fruit de la passion)");
                 break;
             }
-
         }
     }
+    private static void CharacterInfo(int id){
+        var name= characters.get(id).Name();
+        var damage= characters.get(id).Damage();
+        var healthPoint= characters.get(id).HealthPoint();
+        var initiative= characters.get(id).Initiative();
+        System.out.println("Name of your character :" + name);
+        Integer.toString(damage);
+        System.out.println("Your damage :" + damage);
+        Integer.toString(healthPoint);
+        System.out.println("Your health point :" + healthPoint);
+        Integer.toString(initiative);
+        System.out.println("Your initiative :" + initiative);
+    }
+
 }
 class Character{
     private String name;
@@ -59,15 +89,19 @@ class Character{
         healthPoint=healthPoint - strength;
 
     }
-    private void CharacterInfo(){
-        System.out.println("Name of your character :" + name);
-        Integer.toString(damage);
-        System.out.println("Your damage :" + damage);
-        Integer.toString(healthPoint);
-        System.out.println("Your health point :" + healthPoint);
-        Integer.toString(initiative);
-        System.out.println("Your initiative :" + initiative);
+    public String Name(){
+        return name;
     }
+    public int Damage(){
+        return damage;
+    }
+    public int HealthPoint(){
+        return healthPoint;
+    }
+    public int Initiative(){
+        return initiative;
+    }
+
 }
 
 
