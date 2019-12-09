@@ -59,6 +59,15 @@ class Character{
         healthPoint=healthPoint - strength;
 
     }
+    private void CharacterInfo(){
+        System.out.println("Name of your character :" + name);
+        Integer.toString(damage);
+        System.out.println("Your damage :" + damage);
+        Integer.toString(healthPoint);
+        System.out.println("Your health point :" + healthPoint);
+        Integer.toString(initiative);
+        System.out.println("Your initiative :" + initiative);
+    }
 }
 
 
