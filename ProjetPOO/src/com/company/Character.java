@@ -3,15 +3,15 @@ package com.company;
 import java.util.Scanner;
 
 public class Character {
-    private String name;
-    private int damage;
-    private int healthPoint;
-    private int initiative;
+    protected String name;
+    protected int damage;
+    protected int healthPoint;
+    protected int initiative;
     public Character(){
         Getters();
 
     }
-    private void Getters(){
+    private  void Getters(){
         System.out.println("Give me your name");
         Scanner userInput = new Scanner(System.in);
         name = userInput.nextLine();
@@ -25,9 +25,8 @@ public class Character {
         userInput = new Scanner(System.in);
         initiative = userInput.nextInt();
     }
-    public void Damage(int strength){
-        healthPoint=healthPoint - strength;
-
+    public void Damage(int damage){
+        healthPoint=healthPoint - damage;
     }
     public String GetName(){
         return name;

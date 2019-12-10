@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37b2717f-08e3-427f-94ef-9763f3a4583c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Character.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Fight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Priest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Thief.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Warrior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/Wizard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetPOO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetPOO.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjetPOO/com/company/Character.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetPOO/com/company/Character.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjetPOO/com/company/Fight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetPOO/com/company/Fight.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjetPOO/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjetPOO/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Fight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Fight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,22 +90,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="274" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575967595856" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1575972740593">
+    <state x="756" y="404" width="408" height="240" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1575984749606">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575972740593" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1575972740592">
+    <state x="756" y="404" width="408" height="240" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1575984749606" />
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom" timestamp="1575993093055">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575972740592" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1575972740592">
+    <state width="1877" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575993093055" />
+    <state width="1877" height="348" key="GridCell.Tab.0.center" timestamp="1575993093054">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575972740592" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1575972740593">
+    <state width="1877" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575993093054" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left" timestamp="1575993093054">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575972740593" />
+    <state width="1877" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575993093054" />
+    <state width="1877" height="348" key="GridCell.Tab.0.right" timestamp="1575993093054">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575993093054" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1575993093055">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575993093055" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1575993093055">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575993093055" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1575993093055">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575993093055" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1575993093055">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575993093055" />
     <state x="656" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1575965846615">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
