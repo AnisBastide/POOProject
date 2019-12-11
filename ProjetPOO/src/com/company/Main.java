@@ -1,14 +1,22 @@
 package com.company;
-
-import org.jetbrains.annotations.NotNull;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Class that is launched when we execute the code
+ * This class run the commands.
+ */
 public class Main {
+    /**
+     * List that contains the characters
+     */
     static List<Character> characters = new ArrayList();
 
+    /**
+     *Method that is launch when we execute the code
+     * it run the commands ( all the command are explained in the case "help")
+     */
     public static void main(String[] args) {
         // write your code here
         //System.out.println( "Hello World !" );
@@ -17,8 +25,6 @@ public class Main {
         System.out.println("---------------------------------");
         System.out.println("type your command");
         boolean menu = true;
-        int count = 0;
-
         while (menu) {
             Scanner userInput = new Scanner(System.in);
             String command = userInput.nextLine();
@@ -32,7 +38,8 @@ public class Main {
                             + "create warrior => create a character with a shield \n"
                             + "create priest => create a character with heal \n"
                             + "create wizard => create a character with magic \n"
-                            + "create thief => create character with critical hits and dodges");
+                            + "create thief => create character with critical hits and dodges \n"
+                            + "remove => delete a character");
                     break;
                 case "exit": {
                     menu = false;
@@ -108,6 +115,10 @@ public class Main {
         }
     }
 
+    /**
+     * This method print all the info of a character
+     * @param id the id of the character in the list characters
+     */
     private static void CharacterInfo(int id) {
         var name = characters.get(id).GetName();
         var damage = characters.get(id).GetDamage();

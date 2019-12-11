@@ -1,13 +1,27 @@
 package com.company;
-import java.sql.SQLOutput;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * Class that make fight
+ */
 public class Fight {
+    /**
+     * Method that is used to initialize a fight
+     * @param idPlayer1 id of the first player to fight
+     * @param idPlayer2 id of the second player to fight
+     * @param characters List of the player (we need it to get the information of each player for the fight)
+     */
     public void InitFight(int idPlayer1, int idPlayer2, List<Character> characters){
         Fight(idPlayer1, idPlayer2,characters);
     }
 
+    /**
+     * Method that run the fight
+     * @param idPlayer1 id of the first player
+     * @param idPlayer2 id of the second player
+     * @param characters List of the player (we need it to get the information of each player for the fight)
+     */
     private void Fight(int idPlayer1, int idPlayer2, List<Character> characters){
         int player1;
         int player2;
