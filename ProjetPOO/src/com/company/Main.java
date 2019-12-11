@@ -28,7 +28,7 @@ public class Main {
                             + "quit => Quit the application\n" + "create character => create a new character\n"
                             + "list => print the list of all character\n"
                             + "info => give all information about a character \n"
-                            + "fight => launch a fight beetween two characters \n"
+                            + "fight => launch a fight between two characters \n"
                             + "create warrior => create a character with a shield \n"
                             + "create priest => create a character with heal \n"
                             + "create wizard => create a character with magic \n"
@@ -82,8 +82,25 @@ public class Main {
                     int idPlayer2 = userInput.nextInt();
                     var Fight = new Fight();
                     Fight.InitFight(idPlayer1, idPlayer2, characters);
+                    characters.get(idPlayer1).ResetStats();
+                    characters.get(idPlayer2).ResetStats();
                 }
                 break;
+                case "remove":
+                    System.out.println("Give me the id of the character you want to delete: ");
+                    userInput = new Scanner(System.in);
+                    int id = userInput.nextInt();
+                    System.out.println("Are you sure about that? yes/no");
+                    userInput = new Scanner(System.in);
+                    String answer = userInput.nextLine();
+                    switch (answer) {
+                        case "yes":
+                            characters.get(id).GetInformationOnDeath();
+                            characters.remove(id);
+
+                        case "no":
+                            System.out.println("returning to the menu.");
+                    }
                 default:
                     System.out.println("rentre une commande qui existe fdp (fruit de la passion)");
                     break;
@@ -103,6 +120,7 @@ public class Main {
         System.out.println("Your health point :" + healthPoint);
         Integer.toString(initiative);
         System.out.println("Your initiative :" + initiative);
+        characters.get(id).GetInformation();
     }
 
 }

@@ -19,4 +19,11 @@ public class Warrior extends Character {
         }
 
     }
+    public void GetInformation(){
+        System.out.println("This character is a Warrior and he got " + shield + " shield");
+    }
+    public void GetInformationOnDeath(){
+        System.out.println("This character has been deleted, it was a Warrior named : " + name);
+    }
+
 }

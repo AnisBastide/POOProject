@@ -21,4 +21,10 @@ public class Priest extends Character {
             System.out.println(name + " heal himself for " + heal + "HP.");
         }
     }
+    public void GetInformation(){
+        System.out.println("This character is a Priest and he got " + heal + " heal");
+    }
+    public void GetInformationOnDeath(){
+        System.out.println("This character has been deleted, it was a Priest named : " + name);
+    }
 }

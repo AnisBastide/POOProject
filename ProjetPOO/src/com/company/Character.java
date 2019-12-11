@@ -7,6 +7,7 @@ public class Character {
     protected int damage;
     protected int healthPoint;
     protected int initiative;
+    protected int maxHealthPoint;
     public Character(){
         Getters();
 
@@ -24,6 +25,7 @@ public class Character {
         System.out.println("Give me your Initiative");
         userInput = new Scanner(System.in);
         initiative = userInput.nextInt();
+        maxHealthPoint=healthPoint;
     }
     public void Damage(int damage){
         healthPoint=healthPoint - damage;
@@ -34,10 +36,22 @@ public class Character {
     public int GetDamage(){
         return damage;
     }
+    public int GetDamageInFight(){
+        return damage;
+    }
     public int GetHealthPoint(){
         return healthPoint;
     }
     public int GetInitiative(){
         return initiative;
+    }
+    public void GetInformation(){
+        System.out.println("This character is a basic character");
+    }
+    public void ResetStats(){
+        healthPoint=maxHealthPoint;
+    }
+    public void GetInformationOnDeath(){
+        System.out.println("This character has been deleted, it was a basic character named : " + name);
     }
 }

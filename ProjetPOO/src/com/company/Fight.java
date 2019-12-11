@@ -34,11 +34,11 @@ public class Fight {
         while (characters.get(idPlayer1).GetHealthPoint()>0 && (characters.get(idPlayer2).GetHealthPoint()>0)){
             var healthPLayer1=characters.get(player1).GetHealthPoint();
             var healthPLayer2=characters.get(player2).GetHealthPoint();
-            characters.get(player2).Damage(characters.get(player1).GetDamage());
+            characters.get(player2).Damage(characters.get(player1).GetDamageInFight());
             System.out.println(characters.get(player1).GetName() + " attacks for " + (healthPLayer2-characters.get(player2).GetHealthPoint()) + " damage. ");
             System.out.println(characters.get(player2).GetName() + " have " + characters.get(player2).GetHealthPoint() + " HP left. ");
             if (characters.get(player2).GetHealthPoint()>0){
-                characters.get(player1).Damage(characters.get(player2).GetDamage());
+                characters.get(player1).Damage(characters.get(player2).GetDamageInFight());
                 System.out.println(characters.get(player2).GetName() + " attacks for " + (healthPLayer1-characters.get(player1).GetHealthPoint()) + " damage. ");
                 System.out.println(characters.get(player1).GetName() + " have " + characters.get(player1).GetHealthPoint() + " HP left. ");
             }
